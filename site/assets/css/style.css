@@ -1,5 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+}
+/* Globais */
+.content-page {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+.d-flex {
+  display: flex;
+}
+.jc-around{
+  justify-content: space-around;
+}
+.al-i-center {
+  align-items: center;
+}
+.w50 {
+  width: 50%;
+}
+
+/* Cabeçalho */
+.header {
+  padding-top: 57px;
+}
+header img {
+  width: 233px;
+}
+header nav > a{
+  display: inline-block;
+  margin-left: 8px;
+  padding: 5px;
+  color: #FFF;
+  font: normal normal bold  20px Raleway;
+}
+header nav > a:hover{
+  border-bottom: 2px solid #FFDD33;
+}
+.btn-contato {
+  padding: 18px 24px;
+  background-color: #0F3FD3;
+  border-radius: 10px;
+}
+.btn-contato:hover {
+  border: none;
+  background-color: #0038df;
+}
+/* conteudo */
+.main {
+  background-image: url('../img/bg.svg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 700px;
+}
+.mockup {
+  margin-top: 140px;
+  text-align: center;
+  color: #FFF;
+}
+.mockup h2 {
+  width: 100%;
+  font: normal normal normal 3.5rem Raleway;
+  color: #FFF;
+}
+.mockup p {
+  margin: 2rem 0;
+  font: normal normal normal 1.5rem Raleway;
+}
+.mockup img{
+  max-width: 908px;
 }
