@@ -19,6 +19,9 @@
 .jc-around{
   justify-content: space-around;
 }
+.jc-between {
+  justify-content: space-between;
+}
 .al-i-center {
   align-items: center;
 }
@@ -75,5 +78,12 @@ header nav > a:hover{
   font: normal normal normal 1.5rem Raleway;
 }
 .mockup img{
-  max-width: 908px;
+  max-width: 100%;
+}
+/*seção de marcas*/
+section.marcas {
+  padding: 3rem 0;
+}
+section.marcas img {
+  max-width: calc(100% / 5);
 }
