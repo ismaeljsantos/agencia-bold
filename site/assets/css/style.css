@@ -1,22 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   text-decoration: none;
 }
 /* Globais */
 .content-page {
-  max-width: 1240px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 0 2%;
 }
 .d-flex {
   display: flex;
 }
-.jc-around{
+.jc-around {
   justify-content: space-around;
 }
 .jc-between {
@@ -28,7 +28,12 @@
 .w50 {
   width: 50%;
 }
-
+.w60 {
+  width: 60%;
+}
+.w40 {
+  width: 40%;
+}
 /* Cabeçalho */
 .header {
   padding-top: 57px;
@@ -36,19 +41,19 @@
 header img {
   width: 233px;
 }
-header nav > a{
+header nav > a {
   display: inline-block;
   margin-left: 8px;
   padding: 5px;
-  color: #FFF;
-  font: normal normal bold  20px Raleway;
+  color: #fff;
+  font: normal normal bold 20px Raleway;
 }
-header nav > a:hover{
-  border-bottom: 2px solid #FFDD33;
+header nav > a:hover {
+  border-bottom: 2px solid #ffdd33;
 }
 .btn-contato {
   padding: 18px 24px;
-  background-color: #0F3FD3;
+  background-color: #0f3fd3;
   border-radius: 10px;
 }
 .btn-contato:hover {
@@ -57,7 +62,7 @@ header nav > a:hover{
 }
 /* conteudo */
 .main {
-  background-image: url('../img/bg.svg');
+  background-image: url("../img/bg.svg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -66,24 +71,163 @@ header nav > a:hover{
 .mockup {
   margin-top: 140px;
   text-align: center;
-  color: #FFF;
+  color: #fff;
 }
 .mockup h2 {
   width: 100%;
   font: normal normal normal 3.5rem Raleway;
-  color: #FFF;
+  color: #fff;
 }
 .mockup p {
   margin: 2rem 0;
   font: normal normal normal 1.5rem Raleway;
 }
-.mockup img{
+.mockup img {
   max-width: 100%;
 }
 /*seção de marcas*/
 section.marcas {
+  margin-top: 50px;
   padding: 3rem 0;
 }
 section.marcas img {
   max-width: calc(100% / 5);
+}
+/*seção porquenos*/
+section.porquenos > .content-page {
+  max-width: 1600px;
+}
+section.porquenos {
+  padding: 2rem 0 8.125rem;
+  background-color: #fbfcfe;
+}
+section.porquenos h2 {
+  margin-top: 6rem;
+  font: normal normal bold 4.6rem "Raleway";
+  text-align: center;
+  color: #040404;
+}
+section.porquenos .content-page > p {
+  margin-top: 20px;
+  margin-bottom: 80px;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #7e92ac;
+}
+.card-porquenos {
+  margin: 0 8px;
+  padding: 2rem 2.5rem 4rem 2.5rem;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 20px 40px #2426721c;
+  border-radius: 20px;
+}
+.card-porquenos img {
+  margin-top: 2rem;
+  max-width: 70px;
+}
+.card-porquenos > h3 {
+  margin-top: 2rem;
+  font: normal normal 600 1.5rem "Raleway";
+}
+.card-porquenos > p {
+  margin-top: 27px;
+  font: normal normal normal 1rem "Raleway";
+  color: #7e92ac;
+  letter-spacing: 0px;
+}
+/* consultor */
+section.consultor {
+  padding: 5.563rem 0 6.25rem;
+  background-image: url("../img/bg-azul.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #ffffff;
+}
+section.consultor h2 {
+  font: normal normal normal 64px/75px "Raleway";
+}
+section.consultor p {
+  margin-top: 36px;
+  margin-bottom: 40px;
+  font: normal normal normal 20px/32px "Raleway";
+}
+section.consultor a.btn-consultor {
+  display: inline-block;
+  background-color: #ffdd33;
+  font: normal normal bold 20px/24px Raleway;
+  letter-spacing: 1.88px;
+  color: #0f3fd3;
+  text-transform: uppercase;
+  padding: 1.375rem 2.813rem;
+  border-radius: 10px;
+}
+/* beneficios */
+section.beneficios {
+  padding: 150px 0;
+}
+section.beneficios img.tela {
+  margin-left: 3rem;
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0px 20px 40px #2426721c;
+}
+section.beneficios h2 {
+  font: normal normal bold 3.8rem "Raleway";
+  color: #040404;
+  margin-top: 1rem;
+  margin-bottom: 2.2rem;
+}
+section.beneficios ul {
+  list-style: none;
+  width: 85%;
+}
+ul.lista-beneficios li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+ul.lista-beneficios li p {
+  margin-left: 1.688rem;
+  font: normal normal medium 16px/24px "Raleway";
+  color: #7e92ac;
+}
+a.btn-contato-primary {
+  margin-top: 1rem;
+  display: inline-block;
+  color: #fff;
+  background-color: #0038df;
+  font: normal normal bold 1rem "Raleway";
+  letter-spacing: 1.88px;
+  text-transform: uppercase;
+  padding: 1.3rem 1.5rem;
+  border-radius: 10px;
+}
+/* depoimentos */
+section.depoimentos {
+  background: #fbfcfe 0% 0% no-repeat padding-box;
+  text-align: center;
+}
+section.depoimentos h2 {
+  padding: 4rem 0;
+  font: normal normal bold 64px/75px "Raleway";
+}
+section.depoimentos .card-depoimentos {
+  background-color: #fff;
+  padding: 2rem 1rem;
+  border-radius: 1.2rem;
+}
+section.depoimentos .card-depoimentos img {
+  margin: 1.5rem 0;
+}
+section.depoimentos h3 {
+  font: normal normal normal 30px/35px "Raleway";
+  color: #000;
+}
+section.depoimentos h4 {
+  font: normal normal normal 18px/21px "Raleway";
+}
+section.depoimentos .card-depoimentos p {
+  color: #7e92ac;
 }
