@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
   text-decoration: none;
+  list-style: none;
 }
 /* Globais */
 .content-page {
@@ -21,6 +22,9 @@
 }
 .jc-between {
   justify-content: space-between;
+}
+.f-column {
+  flex-direction: column;
 }
 .al-i-center {
   align-items: center;
@@ -208,17 +212,54 @@ a.btn-contato-primary {
 section.depoimentos {
   background: #fbfcfe 0% 0% no-repeat padding-box;
   text-align: center;
+  padding: 2% 0 5%;
 }
 section.depoimentos h2 {
   padding: 4rem 0;
   font: normal normal bold 64px/75px "Raleway";
 }
+/*carrocel*/
+.slick-list {
+  overflow: hidden;
+}
+.slick-track {
+  display: flex;
+  padding: 1rem 0;
+}
+.slick-dots {
+  display: flex;
+  justify-content: center;
+}
+ul.slick-dots li {
+  margin: 0 3px;
+}
+.slick-dotted li button {
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  color: #d8d8d8;
+  background-color: #d8d8d8;
+  opacity: 1;
+  cursor: pointer;
+  border-width: 0;
+}
+.slick-dotted li.slick-active button {
+  background: #383855;
+  color: #383855;
+}
+
+/*************************************/
 section.depoimentos .card-depoimentos {
   background-color: #fff;
   padding: 2rem 1rem;
-  border-radius: 1.2rem;
+  border-radius: 0.4rem;
+  margin: 10px;
+  box-shadow: 0px 5px 10px #70707038;
 }
-section.depoimentos .card-depoimentos img {
+section.depoimentos .card-depoimentos img.foto-perfil {
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
   margin: 1.5rem 0;
 }
 section.depoimentos h3 {
@@ -226,8 +267,142 @@ section.depoimentos h3 {
   color: #000;
 }
 section.depoimentos h4 {
+  margin-top: 12px;
+  color: #7e92ac;
   font: normal normal normal 18px/21px "Raleway";
 }
 section.depoimentos .card-depoimentos p {
+  padding: 0 0.5rem;
+  margin-top: 1.7rem;
   color: #7e92ac;
+}
+section.depoimentos .card-depoimentos .avaliacao {
+  padding-top: 2rem;
+}
+/* seção de contato*/
+section.contato {
+  padding: 5rem 0;
+}
+section.contato h2 {
+  text-align: center;
+  font: normal normal bold 4.6rem "Raleway";
+  color: #040404;
+}
+section.contato p {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-size: 1.5rem;
+  color: #7e92ac;
+}
+section.contato input {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #f2f2f2;
+  font: normal normal normal 1.5rem "Raleway";
+  border: #c3cce8 1px solid;
+  background-color: #fcfdff;
+}
+form.form-contato {
+  max-width: 800px;
+  margin: 0 auto;
+}
+form.form-contato textarea {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: #c3cce8 1px solid;
+  background-color: #fcfdff;
+  font: normal normal normal 1.5rem "Raleway";
+  margin-top: 1rem;
+}
+form.form-contato input:focus,
+form.form-contato textarea:focus {
+  outline: none;
+  border-color: #0f3fd3;
+}
+form.form-contato button.btn-contato-enviar {
+  margin-top: 1rem;
+  width: 100%;
+  font: normal normal bold 20px/24px Raleway;
+  padding: 1.2rem 0;
+  color: #fff;
+  background-color: #0f3fd3;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+/* rodapé */
+section.rodape {
+  padding: 2rem 0;
+  background-color: #0f3fd3;
+  color: #fff;
+}
+section.rodape .content-page > .w50 {
+  min-height: 2rem;
+}
+section.rodape p {
+  text-align: center;
+  font: normal normal normal 1rem "Raleway";
+}
+section.rodape a {
+  display: inline-block;
+  color: #fff;
+  font: normal normal bold 1rem "Raleway";
+  margin-left: 20px;
+}
+section.rodape nav > a:hover {
+  border-bottom: 2px solid #ffdd33;
+}
+
+/* tela tablet */
+@media screen and (max-width: 768px) {
+  section.porquenos {
+    max-width: 100%;
+  }
+  section.porquenos .box-porquenos {
+    flex-direction: column;
+  }
+  section.porquenos .box-porquenos .card-porquenos {
+    margin-top: 1rem;
+  }
+  section.beneficios .content-page {
+    flex-direction: column-reverse;
+  }
+  section.beneficios .content-page > .w50 {
+    width: 90%;
+    margin: 0 auto;
+  }
+  section.beneficios .content-page > .w50 .tela {
+    width: 100%;
+    margin: 0 0 2rem;
+  }
+  section.rodape .content-page {
+    flex-direction: column;
+  }
+  section.rodape .content-page > .w50 {
+    width: 100%;
+  }
+  section.rodape .content-page > .w50 p {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  section.rodape .content-page > .w50 nav {
+    width: 100%;
+    text-align: center;
+  }
+  section.rodape .content-page > .w50 .jc-around {
+    justify-content: center;
+  }
+  section.rodape a {
+    margin: 1rem 1rem 0;
+  }
+  /* section.rodape .content-page > .w50 {
+    max-width: 100%;
+  } */
 }
