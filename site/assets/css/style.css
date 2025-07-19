@@ -406,3 +406,33 @@ section.rodape nav > a:hover {
     max-width: 100%;
   } */
 }
+
+/* tela mobile */
+@media screen and (max-width: 662px) {
+  .hidden {
+    display: none;
+  }
+  .mockup {
+    margin-top: 50px;
+  }
+  .mockup h2 {
+    font-size: 2.5rem;
+  }
+  .mockup p {
+    font-size: 1.2rem;
+  }
+  section.marcas {
+    margin: 0;
+    padding: 2rem 0;
+  }
+  section.marcas > .content-page {
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+  section.marcas > .content-page img {
+    max-width: 100%;
+  }
+  section.depoimentos h2 {
+    font-size: 2.5rem;
+  }
+}
