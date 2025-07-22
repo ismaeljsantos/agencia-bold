@@ -1,4 +1,16 @@
 $(document).ready(function () {
+  let menuBtn = document.querySelector(".menu-mobile i");
+  menuBtn.addEventListener("click", () => {
+    let itemsMenu = document.querySelector(".items-menu-mobile");
+    if (itemsMenu.classList.contains("show")) {
+      itemsMenu.classList.remove("show");
+      itemsMenu.classList.add("hide");
+    } else {
+      itemsMenu.classList.remove("hide");
+      itemsMenu.classList.add("show");
+    }
+  });
+
   $(".box-depoimentos").slick({
     dots: true,
     arrows: false,

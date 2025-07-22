@@ -8,7 +8,11 @@
   text-decoration: none;
   list-style: none;
 }
+
 /* Globais */
+.hidden-desktop {
+  display: none;
+}
 .content-page {
   max-width: 1300px;
   margin: 0 auto;
@@ -357,9 +361,54 @@ section.rodape a {
 section.rodape nav > a:hover {
   border-bottom: 2px solid #ffdd33;
 }
-
+.menu-mobile i {
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
 /* tela tablet */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
+  .header {
+    padding-top: 1.5rem;
+    padding-left: 1rem;
+  }
+  .hidden {
+    display: none;
+  }
+  .hidden-desktop {
+    display: block;
+  }
+  .items-menu-mobile {
+    /* display: none; */
+    transition: opacity 0.4 ease-in-out;
+    background-color: #f8f8f8;
+    position: absolute;
+    left: 20%;
+    top: 4.3rem;
+    width: 80%;
+    padding: 2%;
+    height: 100vh;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .hide {
+    opacity: 0;
+  }
+
+  .items-menu-mobile a {
+    display: block;
+    padding: 1rem 2rem;
+    color: #0f3fd3;
+    font: normal normal bold 1.5rem Raleway;
+    border-bottom: 1px solid #c3cce8;
+  }
+  .items-menu-mobile a.btn-contato {
+    color: #fff;
+  }
   section.porquenos {
     max-width: 100%;
   }
@@ -409,9 +458,6 @@ section.rodape nav > a:hover {
 
 /* tela mobile */
 @media screen and (max-width: 662px) {
-  .hidden {
-    display: none;
-  }
   .mockup {
     margin-top: 50px;
   }
